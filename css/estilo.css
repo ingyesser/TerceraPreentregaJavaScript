@@ -1,0 +1,857 @@
+@charset "UTF-8";
+/*comentario sass y css*/
+.navegacion-inicio {
+  background-color: #ffffff;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+/* estilos menu de navegacion*/
+.navegacion-inicio {
+  background-color: #ffffff;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  top: 0;
+}
+.navegacion-inicio .menu1 img {
+  width: 200px;
+  height: 100px;
+}
+.navegacion-inicio .menu1 .menu {
+  margin-left: 22%;
+}
+.navegacion-inicio .menu1 .menu .redes img {
+  width: 30px;
+  height: 30px;
+  margin-right: 50px;
+}
+.navegacion-inicio .menu1 .menu ul li a {
+  color: #000;
+  font-size: 17px;
+  margin-right: 15px;
+}
+.navegacion-inicio .menu1 .menu ul li a:hover {
+  color: #ffe800 !important;
+}
+.navegacion-inicio .menu1 .menu .menudos a:hover {
+  background-color: #000000;
+  color: #ffe800;
+}
+
+/*Boton cambiar modo*/
+/*
+#cambiar-modo {
+  margin-right: 10px;
+  border-radius: 50px;
+  padding: 3px;
+  background-color: #fff;
+  color: #000;
+}
+
+#cambiar-modo:hover {
+  background-color: #000;
+  color: #fff;
+}
+*/
+
+#toggle {
+  display: none;
+}
+
+#label-toggle {
+  font-size: 30px;
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+/*Modo Oscuro para la pagina*/
+
+.oscuro {
+  background-color: #000;
+  color: #fff;
+  border: 5px solid #fff;
+  transition: all 1.8s ease;
+}
+
+/* ESTILO SLIDER SWIPER*/
+
+.swiper {
+  margin-top: 110px;
+  width: 100%;
+  height: 700px;
+}
+
+.swiper .swiper-wrapper .swiper-slide img {
+  height: 600px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.banner-nuevo {
+  height: 700px;
+  padding: 50px 0px 0px 0px;
+}
+
+/*Boton agregar*/
+.botonCar {
+  position: absolute;
+  top: 550px;
+  right: 900px;
+}
+
+.botonCarro {
+  padding: 8px 16px;
+  background-color: #fff;
+  color: #000000;
+  border-color: #000;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*Estilo productos*/
+
+.container-items {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+h1 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+h2 {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.item {
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.item:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.item img {
+  width: 330px;
+  height: 340px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+  transition: all 0.5s;
+}
+
+.item figure {
+  overflow: hidden;
+}
+
+.item:hover img {
+  transform: scale(1.2);
+}
+
+.info-product {
+  padding: 15px 30px;
+  line-height: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.price {
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.info-product button {
+  border: none;
+  background: none;
+  background-color: #000;
+  color: #fff;
+  padding: 15px 10px;
+  cursor: pointer;
+}
+
+.cart-empty {
+  padding: 20px;
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+/*Contador de producto*/
+
+.container-icon {
+  position: relative;
+}
+
+.count-products {
+  margin-right: 20px;
+}
+
+.container-cart-products {
+  top: 50px;
+  right: 0;
+
+  background-color: #fff;
+  width: 400px;
+  z-index: 1;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+}
+
+/*Estilo categorias*/
+
+.imagencategoria {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+.imagencategoria h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.imagencategoria .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.imagencategoria .imagenes .cajaimagen {
+  height: 550px;
+  position: relative;
+}
+.imagencategoria .imagenes .cajaimagen img {
+  display: block;
+  max-width: 330px;
+  width: 330px;
+  height: 430px;
+  padding: 10px;
+  transition: transform 0.8s;
+  /* Efecto de zoom al pasar el mouse */
+}
+.imagencategoria .imagenes .cajaimagen img:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+.imagencategoria .imagenes .cajaimagen .letra {
+  color: #000;
+  bottom: 150px;
+  right: 20px;
+  left: 20px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+.imagencategoria .imagenes .cajaimagen .letra P {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+.imagencategoria .imagenes .cajaimagen .boton-agregar {
+  background-color: #fff;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  padding: 5px 70px;
+  font-size: 20px;
+}
+.imagencategoria .imagenes .cajaimagen .boton-agregar:hover {
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+}
+
+/*estilos nueva coleccion*/
+.imagencoleccion {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+.imagencoleccion h2 {
+  margin: 20px 0px 20px 0px;
+  font-size: 40px;
+  font-weight: bold;
+}
+.imagencoleccion .imagenes {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+}
+.imagencoleccion .imagenes .cajaimagen {
+  height: 550px;
+  position: relative;
+}
+.imagencoleccion .imagenes .cajaimagen img {
+  display: block;
+  max-width: 330px;
+  width: 330px;
+  height: 430px;
+  padding: 10px;
+  transition: transform 0.8s;
+  /* Efecto de zoom al pasar el mouse */
+}
+.imagencoleccion .imagenes .cajaimagen img:hover {
+  transform: scale(1.1);
+  /* Aumenta el tamaño de la imagen al pasar el mouse */
+}
+.imagencoleccion .imagenes .cajaimagen .letra {
+  color: #000;
+  bottom: 150px;
+  right: 20px;
+  left: 20px;
+  text-align: center;
+  opacity: 1;
+  transition: opacity 0.7s ease;
+}
+.imagencoleccion .imagenes .cajaimagen .letra P {
+  margin-top: 10px;
+  font-size: 15px;
+  font-weight: bold;
+}
+.imagencoleccion .imagenes .cajaimagen .boton-imagen {
+  background-color: #fff;
+  text-decoration: none;
+  color: #000000;
+  border: 2px solid #000;
+  margin-bottom: 20px;
+  padding: 5px 100px;
+  font-size: 20px;
+}
+.imagencoleccion .imagenes .cajaimagen .boton-imagen:hover {
+  background-color: #000;
+  border-color: #fff;
+  color: #fff;
+}
+
+.marcas {
+  display: inline-block;
+  justify-content: center;
+  text-align: center;
+  background-color: #fff;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #020202;
+  height: 100px;
+}
+footer .logoabajo {
+  display: flex;
+  margin-left: 180px;
+  align-content: left;
+  text-align: left;
+  width: 250px;
+  height: 80px;
+}
+footer .lista-derecha ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin-right: 160px;
+  margin-top: 20px;
+  color: #fff;
+}
+footer .lista-derecha ul li {
+  margin: 0 10px;
+}
+footer .lista-derecha ul li a img {
+  width: 30px;
+  height: 30px;
+  background-color: #fff;
+  /*width: 30px;
+  height: 30px;
+  background-color: #ffffff;*/
+  border-radius: 360px;
+}
+
+/*estilos sueter para adultos*/
+
+.imagen-secion img {
+  width: 100%;
+  height: 600px;
+}
+.producto {
+  padding: 0px 0px 10px 0px;
+  text-align: center;
+}
+.producto h1 {
+  margin: 40px 0px 20px 0px;
+  font-size: 40px;
+}
+.producto h2 {
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+.producto .imagenes-producto {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 100%;
+  margin: 0 auto;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+
+.producto .imagenes-producto .caja-lateral {
+  background-color: #f5f5f5;
+  padding: 10px;
+  width: 200px;
+}
+.producto .imagenes-producto .caja-lateral h6 {
+  text-align: left;
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #000;
+  font-weight: bold;
+}
+.producto .imagenes-producto .caja-lateral ul {
+  list-style: none;
+  padding: 0;
+}
+.producto .imagenes-producto .caja-lateral ul li {
+  text-align: left;
+  margin-bottom: 5px;
+  font-size: 14px;
+  color: #600;
+}
+.producto .imagenes-producto .caja-lateral ul li a {
+  font-size: 17px;
+  text-decoration: none;
+  color: #000;
+}
+.producto .imagenes-producto .caja-lateral ul li a:hover {
+  color: #c7b80e;
+  font-weight: bold;
+}
+.producto .imagenes-producto .caja-imagen-sueter {
+  height: 550px;
+}
+.producto .imagenes-producto .caja-imagen-producto img {
+  max-width: 330px;
+  width: 330px;
+  height: 430px;
+  padding: 10px;
+  cursor: pointer;
+  transition: opacity 0.5s;
+}
+.producto .imagenes-producto .caja-imagen-producto img:hover {
+  opacity: 0.8;
+}
+.producto .imagenes-producto .caja-imagen-producto .boton-gorras {
+  background-color: #fff;
+  border: 2px solid #000;
+  text-decoration: none;
+  color: #000000;
+  margin-bottom: 20px;
+  padding: 5px 100px;
+  font-size: 20px;
+}
+.producto .imagenes-producto .caja-imagen-producto .boton-gorras:hover {
+  background-color: #000;
+  color: #fff;
+  border-color: #fff;
+}
+
+/*Estilos contacto*/
+/*Estilos de contacto*/
+.bod-contacto {
+  background-image: url("../img/contactofondo.jpg");
+  /* Reemplaza 'ruta_de_la_imagen.jpg' con la ruta de tu imagen */
+  background-size: cover;
+  /* Ajusta el tamaño de la imagen para cubrir todo el fondo */
+  background-repeat: no-repeat;
+  /* Evita que la imagen se repita */
+}
+
+.footer-contacto {
+  margin-top: -0px;
+}
+
+.formulario {
+  width: 450px;
+  height: 550px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin-top: 9%;
+  background-color: #ffffff;
+  color: #000000;
+  box-shadow: 0px 15px 25px rgba(0, 0, 0, 0.5);
+}
+.formulario h1 {
+  font-weight: 20px;
+}
+.formulario .campo {
+  margin-bottom: 20px;
+  text-align: left;
+  background-color: #fff;
+}
+.formulario .campo label {
+  display: block;
+}
+.formulario .campo input {
+  border-radius: 2px;
+}
+.formulario .campo textarea {
+  display: block;
+  width: 420px;
+}
+.formulario .campo .boton-contacto {
+  background-color: #000;
+  background-color: #d1c10e;
+  width: 150px;
+  height: 40px;
+  border-radius: 5px;
+  border-color: #d1c10e;
+  font-size: 18px;
+  margin-left: 130px;
+}
+.formulario .boton-contacto:hover {
+  background-color: #c7b80e;
+  color: #fff;
+}
+
+.lista-contacto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+.lista-contacto li {
+  color: #fff;
+}
+
+.moving-div {
+  width: 100%;
+  height: 50px;
+  background-color: #0c0c0c;
+  position: absolute;
+  animation: moveDiv 5s linear infinite;
+}
+
+.boton-whatsapp {
+  display: flex;
+  background-color: #f5f5f5;
+  border: 1px solid #fff;
+  position: fixed;
+  z-index: 999;
+  border-radius: 100%;
+  bottom: 50px;
+  right: 10px;
+  padding: 0px;
+  transition: ease 0.3s;
+}
+.boton-whatsapp a img {
+  width: 50px;
+  transition: ease 1s;
+}
+.boton-whatsapp a .palabra {
+  position: absolute;
+  width: 130px;
+  transform: translateX(-50%);
+  /* Centra el tooltip horizontalmente */
+  background-color: #000001;
+  /* Fondo del tooltip */
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 3px;
+  opacity: 0;
+  /* Oculta el tooltip por defecto */
+  transition: opacity 0.3s ease;
+  font-size: 11px;
+}
+.boton-whatsapp a .palabra:hover {
+  width: 150px;
+  opacity: 1;
+  /* Mostrar la palabra al pasar el mouse*/
+  transform: translateX(-100%);
+}
+
+.frase-index {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  font-size: 20px;
+  padding-top: 11px;
+  margin: 50px 20px 50px 20px;
+  /*background-color: #e7d0bc;*/
+}
+.frase-index h1 {
+  text-align: center;
+}
+.frase-index p {
+  max-width: 100%;
+  margin-right: 150px;
+  margin-left: 150px;
+}
+
+.suscripcion {
+  background-color: #e9da08;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  margin-bottom: -10px;
+}
+.suscripcion form {
+  max-width: 100%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.suscripcion form h5 {
+  margin-bottom: 10px;
+  font-size: 30px;
+  padding-bottom: 10px;
+}
+.suscripcion form .campo {
+  display: inline-block;
+  margin-right: 10px;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 30px;
+}
+.suscripcion form .campo input[type="submit"] {
+  background-color: #000;
+  color: #fff;
+  width: 150px;
+  height: 35px;
+  border: none;
+  cursor: pointer;
+}
+.suscripcion form .campo input[type="submit"]:hover {
+  background-color: #131313;
+  color: #ffffff;
+  border: 1px solid #000;
+}
+.suscripcion form .campo input[type="text"],
+.suscripcion form .campo input[type="email"] {
+  width: 100%;
+  height: 35px;
+  padding: 10px;
+  border: 1px solid #ccc;
+}
+
+.pagos {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  justify-items: center;
+  max-width: 100%;
+}
+.pagos h6 {
+  font-size: 20px;
+  padding-top: 50px;
+}
+.pagos img {
+  padding-top: 20px;
+  width: 350px;
+  height: 130px;
+}
+
+.calidad {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 30px;
+  margin-bottom: 500px;
+  /*width: 1300px;*/
+  margin-left: 50px;
+}
+.calidad .nueva-calidad {
+  width: 500px;
+  height: 200px;
+  margin-right: 30px;
+}
+.calidad .nueva-calidad .descripcion {
+  width: 400px;
+}
+.calidad .nueva-calidad h6 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+.calidad .nueva-calidad .vermas {
+  text-decoration: none;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
+  padding: 10px 30px;
+}
+.calidad .nueva-calidad .vermas:hover {
+  background-color: #000;
+  color: #fff;
+}
+.calidad .imagen-calidad {
+  width: 300px;
+  height: 200px;
+  margin-right: 30px;
+}
+.calidad .imagen-calidad .imagen {
+  max-width: 150px;
+  height: 80px;
+}
+.calidad .imagen-calidad .imagen img {
+  width: 400px;
+  height: 430px;
+}
+.calidad .imagen-calidad .imagen-segunda {
+  width: 300px;
+  height: 150px;
+  margin-bottom: 60px;
+}
+.calidad .imagen-calidad .imagen-segunda img {
+  padding-left: 150px;
+  width: 500px;
+  height: 450px;
+}
+
+@media screen and (max-width: 768px) {
+  .navegacion-inicio .menu1 .menu {
+    margin-left: 0%;
+  }
+  .frase-index p {
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+  footer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .logoabajo {
+    margin-top: 10px;
+    margin-left: 40px;
+  }
+  footer .logoabajo img {
+    width: 200px;
+  }
+  footer .lista-derecha {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  footer .lista-derecha ul {
+    margin-right: 0;
+    display: inline-block;
+  }
+  .banner-nuevo {
+    height: 300px;
+    margin-top: 50px;
+  }
+  .imagen-secion img {
+    height: 300px;
+    margin-top: 50px;
+  }
+
+  .swiper .swiper-wrapper .swiper-slide img {
+    height: 300px;
+    width: 100%;
+    object-fit: cover;
+  }
+
+  .swiper {
+    height: 300px;
+  }
+  /*espaciado entre las cajas para mobile*/
+  .imagen-coleccion-sueter .imagenes-sueter .caja-imagen-sueter {
+    margin-bottom: 20px;
+  }
+  /*espaciado entre las cajas para mobile*/
+  .caja-imagen-pantalonetas {
+    margin-bottom: 20px;
+  }
+  .formulario {
+    margin-top: 150px;
+  }
+  /* margen del boton suscribirse*/
+  input[type="submit"] {
+    margin-top: 20px;
+  }
+  /*categorias */
+  .imagen-categoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .imagen-categoria .imagenes-cate .cajaimagen-cate {
+    height: auto;
+  }
+  .imagen-categoria .imagenes-cate .cajaimagen-cate .letra {
+    /* position: relative;*/
+  }
+  .calidad {
+    margin-bottom: 80px;
+  }
+  .calidad .nueva-calidad {
+    display: inline-block;
+    justify-content: center;
+    margin-bottom: 70px;
+  }
+  .calidad .imagen-calidad {
+    max-width: 300px;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto original */
+    margin-right: 0;
+  }
+  .calidad .imagen-calidad .imagen {
+    max-width: 300px;
+    height: auto;
+  }
+  .calidad .imagen-calidad .imagen img {
+    width: 330px;
+    height: 430px;
+  }
+  .calidad .imagen-calidad .imagen-segunda {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 600px;
+    height: auto;
+  }
+  .calidad .imagen-calidad .imagen-segunda img {
+    max-width: 350px;
+    /* Ajusta el ancho al 100% del contenedor */
+    height: auto;
+    /* Mantiene la proporción de aspecto original */
+    margin-top: 10px;
+    padding-left: 25px;
+  }
+  .imagencoleccion {
+    margin-top: 0px;
+  }
+  .imagen-coleccion-sueter-conjunto {
+    margin-left: 0;
+  }
+  .imagen-coleccion-pantalonetas-bermudas {
+    margin-left: 0;
+  }
+}

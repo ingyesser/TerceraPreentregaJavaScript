@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="icon" href="img/logo.ico" />
+    <meta
+      name="description"
+      content="Descubre la mejor selección de ropa de moda en San Antero, Córdoba. Bermudas, suéteres, pantalonetas y gorras de las últimas tendencias. ¡Compra ahora y luce con estilo en San Antero!"
+    />
+    <meta
+      name="keywords"
+      content="ropa de moda, bermudas, suéteres, pantalonetas, gorras, San Antero, Córdoba, tienda de moda en San Antero"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="css/estilo.css" />
+    <title>Inicio KennySport</title>
+  </head>
+  <body>
+    <!--menu de navegacion-->
+
+    <nav class="navbar navbar-expand-lg navegacion-inicio menu-transparente">
+      <div class="container-fluid menu1">
+        <a href="index.html">
+          <img src="img/logokenny2.JPG" alt="logo kennysport" />
+        </a>
+        <button
+          class="navbar-toggler hamburguesa"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse menu" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 lista-izquierda">
+            <li class="nav-item">
+              <a class="nav-link" aria-current="page" href="index.html"
+                >INICIO</a
+              >
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/productos.html">PRODUCTOS</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/carrito.html">CARRITO</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="paginas/contacto.html">CONTACTO</a>
+            </li>
+          </ul>
+          <label for="toggle" id="label-toggle"
+            ><i class="fa-solid fa-moon"></i
+          ></label>
+          <input type="checkbox" id="toggle" />
+        </div>
+      </div>
+    </nav>
+
+    <!-- Slider main container -->
+    <div class="swiper">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+        <!-- Slides -->
+        <div class="swiper-slide">
+          <img src="img/banner3.png" alt="" />
+          <div class="botonCar">
+            <button class="botonCarro" id="agregar">Agregar al carrito</button>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner2.png" alt="" />
+        </div>
+        <div class="swiper-slide">
+          <img src="img/banner1.JPG" alt="" />
+        </div>
+      </div>
+      <!-- If we need pagination -->
+      <div class="swiper-pagination"></div>
+
+      <!-- If we need navigation buttons -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+      <!-- If we need scrollbar -->
+      <div class="swiper-scrollbar"></div>
+    </div>
+
+    <div class="confirmar-carrito"></div>
+
+    <article class="frase-index">
+      <h1><b>KENNY SPORT</b></h1>
+      <p>
+        Bienvenido a Kenny Sport, tu destino definitivo para la moda urbana de
+        alta calidad. Descubre las últimas tendencias e irradia confianza con la
+        ropa, zapatos y accesorios de la nueva colección de KennySport. Luce lo
+        mejor de ti con la Colección para para un estilo casual y ponte a la
+        moda.
+      </p>
+    </article>
+
+    <!-- Categoria -->
+    <section class="imagencategoria">
+      <h2>Categorias</h2>
+      <div class="imagenes">
+        <div class="cajaimagen">
+          <a href="paginas/sueter.html">
+            <img src="img/sueter/sueter4.jpg" class="img1" alt="Categoria" />
+          </a>
+          <p>CAMISETAS $ 35.000</p>
+          <a href="paginas/productos.html" class="boton-agregar">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a href="paginas/productos.html">
+            <img src="img/pantaloneta/pan4.jpg" class="img2" alt="Categoria" />
+          </a>
+          <p>PANTALONETAS. $ 45.000</p>
+          <a href="paginas/productos.html" class="boton-agregar">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a href="paginas/productos.html">
+            <img src="img/pantaloneta/ber2.jpg" class="img3" alt="Categoria" />
+          </a>
+          <p>BERMUDAS $ 60.00</p>
+          <a href="paginas/sueter.html" class="boton-agregar">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a href="paginas/productos.html">
+            <img
+              src="img/accesorios/gorra10.jpg"
+              class="img3"
+              alt="Categoria"
+            />
+          </a>
+          <p>GORRAS $ 35.000</p>
+          <a href="paginas/sueter.html" class="boton-agregar">VER MÁS</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="calidad">
+      <article class="nueva-calidad">
+        <h6>Mejor Calidad</h6>
+        <p class="descripcion">
+          Descubre la elegancia y comodidad de nuestro suéter exclusivo.
+          Diseñado con materiales suaves y un ajuste favorecedor, este suéter es
+          la elección perfecta para lucir sofisticado y mantenerse fresco. Ya
+          sea para una ocasión casual o formal, este suéter es tu elección
+          ideal.
+        </p>
+        <a class="vermas" href="paginas/sueter.html">VER MÁS</a>
+      </article>
+      <article class="imagen-calidad">
+        <div class="imagen">
+          <img src="img/sueter/calidad1.jpg" alt="sueter calidad" />
+        </div>
+        <div class="imagen-segunda">
+          <img src="img/sueter/calidad3.jpg" alt="sueter calidad" />
+        </div>
+      </article>
+    </section>
+
+    <!-- nueva coleccion sueter -->
+    <section class="imagencoleccion">
+      <h2>Nueva Coleccion</h2>
+      <div class="imagenes">
+        <div class="cajaimagen">
+          <a>
+            <img
+              src="img/sueter/sueter8.jpg"
+              class="img1"
+              alt="sueter-nueva-coleccion"
+            />
+          </a>
+          <p>Camiseta Veneta. $ 35.000</p>
+          <a href="paginas/productos.html" class="boton-imagen">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a>
+            <img
+              src="img/nueva-coleccion/cole5.jpg"
+              class="img2"
+              alt="sueter-nueva-coleccion"
+            />
+          </a>
+          <p>Camiseta Valenciaga. $ 35.000</p>
+          <a href="paginas/productos.html" class="boton-imagen">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a>
+            <img
+              src="img/nueva-coleccion/cole6.jpg"
+              class="img3"
+              alt="sueter-nueva-coleccion"
+            />
+          </a>
+          <p>Camiseta Fear of God. $ 35.00</p>
+          <a href="paginas/productos.html" class="boton-imagen">VER MÁS</a>
+        </div>
+        <div class="cajaimagen">
+          <a>
+            <img
+              src="img/nueva-coleccion/cole4.jpg"
+              class="img3"
+              alt="sueter-nueva-coleccion"
+            />
+          </a>
+          <p>Camiseta Blanca. $ 35.000</p>
+          <a href="paginas/productos.html" class="boton-imagen">VER MÁS</a>
+        </div>
+      </div>
+    </section>
+
+    <!--section suscripcion-->
+    <section class="suscripcion">
+      <form action="">
+        <h5><b>SUSCRÍBETE Y RECIBE UN 10% EN TU PRÓXIMA COMPRA</b></h5>
+        <div class="campo">
+          <input type="text" name="nombre" value="Digite su Nombre" required />
+        </div>
+        <div class="campo">
+          <input
+            type="email"
+            name="email"
+            value="Correo Electronico"
+            required
+          />
+        </div>
+        <div class="campo">
+          <input class="boton-contacto" type="submit" value="Enviar" />
+        </div>
+      </form>
+    </section>
+
+    <!--Section pagos-->
+    <section class="pagos">
+      <h6>Medios de pagos</h6>
+      <img src="img/pago1.jpg" alt="medios de pagos" />
+      <img src="img/pago2.jpg" alt="medios de pagos" />
+    </section>
+
+    <div class="boton-whatsapp">
+      <a
+        href="https://wa.me/3023415375?text=Quiero%20realizar%20un%20proyecto%20web%20php"
+        target="_blank"
+      >
+        <img class="boton" src="img/icono.png" alt="whatsapp" />
+        <span class="palabra">Chatea con Nosotros</span>
+      </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logoabajo">
+        <img src="img/logokenny2.JPG" alt="logo kennysport" />
+      </div>
+      <div class="lista-derecha">
+        <ul>
+          <li><a>Términos de Uso</a></li>
+          <li>
+            <a><h6>© 2023 KennySport - desarrollado por Yesser Rumie</h6></a>
+          </li>
+          <li>
+            <a
+              href="https://www.facebook.com/kenny.diz.5/photos"
+              target="_blank"
+              ><img src="img/facebook.png" alt="facebook"
+            /></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="initswiper.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
