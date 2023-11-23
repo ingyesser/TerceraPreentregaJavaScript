@@ -48,22 +48,6 @@ body {
   color: #ffe800;
 }
 
-/*Boton cambiar modo*/
-/*
-#cambiar-modo {
-  margin-right: 10px;
-  border-radius: 50px;
-  padding: 3px;
-  background-color: #fff;
-  color: #000;
-}
-
-#cambiar-modo:hover {
-  background-color: #000;
-  color: #fff;
-}
-*/
-
 #toggle {
   display: none;
 }
@@ -109,13 +93,105 @@ body {
   right: 900px;
 }
 
-.botonCarro {
-  padding: 8px 16px;
-  background-color: #fff;
-  color: #000000;
-  border-color: #000;
-  border-radius: 5px;
+/* estilo Icono carrito*/
+.icon-cart {
+  width: 40px;
+  height: 40px;
+  color: #000;
+}
+
+.container-icon {
+  position: relative;
+}
+
+.count-products {
+  position: absolute;
+  top: 20%;
+  right: 0;
+
+  background-color: #000;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+  border-radius: 50%;
   cursor: pointer;
+}
+
+.container-cart-products {
+  position: absolute;
+  top: 50px;
+  right: 0;
+
+  width: 400px;
+  z-index: 1;
+
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.icon-close {
+  width: 25px;
+  height: 25px;
+}
+
+.icon-close:hover {
+  color: red;
+  cursor: pointer;
+}
+
+.cart-product {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  border-bottom: 1px solid #8d8d8d;
+}
+
+.hidden-cart {
+  display: none;
+}
+
+.info-cart-product {
+  display: flex;
+  justify-content: space-between;
+  flex: 0.9;
+}
+
+.cantidad-producto-carrito {
+  margin-right: 20px;
+}
+
+.cart-total {
+  display: flex;
+  justify-content: center;
+  justify-items: center;
+}
+
+.cart-total h3 {
+  font-weight: 300;
+}
+
+.total-pagar {
+  font-size: 25px;
+  margin-left: 10px;
+  font-weight: 700;
+}
+
+/*Contador de producto*/
+
+.container-icon {
+  position: relative;
+}
+
+.count-products {
+}
+
+.carrito-vacio {
+  padding: 20px;
+  text-align: center;
 }
 
 /*Estilo productos*/
@@ -191,27 +267,6 @@ h2 {
 
 .hidden {
   display: none;
-}
-
-/*Contador de producto*/
-
-.container-icon {
-  position: relative;
-}
-
-.count-products {
-  margin-right: 20px;
-}
-
-.container-cart-products {
-  top: 50px;
-  right: 0;
-
-  background-color: #fff;
-  width: 400px;
-  z-index: 1;
-  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
-  border-radius: 10px;
 }
 
 /*Estilo categorias*/

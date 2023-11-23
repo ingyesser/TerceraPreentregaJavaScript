@@ -29,6 +29,13 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+      integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <link rel="stylesheet" href="css/estilo.css" />
     <title>Inicio KennySport</title>
   </head>
@@ -58,15 +65,66 @@
                 >INICIO</a
               >
             </li>
-
             <li class="nav-item">
-              <a class="nav-link" href="paginas/productos.html">PRODUCTOS</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="paginas/carrito.html">CARRITO</a>
+              <a class="nav-link" href="paginas/productos.html">PRODUCTO</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="paginas/contacto.html">CONTACTO</a>
+            </li>
+            <li class="nav-item">
+              <div class="container-icon">
+                <div class="container-icon-cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                  <div class="carrito-producto">
+                    <div class="cart-product">
+                      <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Sueter Balenciaga</p>
+                        <span class="precio-producto-carrito">$45.000</span>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$500</span>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
           <label for="toggle" id="label-toggle"
@@ -84,9 +142,6 @@
         <!-- Slides -->
         <div class="swiper-slide">
           <img src="img/banner3.png" alt="" />
-          <div class="botonCar">
-            <button class="botonCarro" id="agregar">Agregar al carrito</button>
-          </div>
         </div>
         <div class="swiper-slide">
           <img src="img/banner2.png" alt="" />
@@ -142,7 +197,7 @@
             <img src="img/pantaloneta/ber2.jpg" class="img3" alt="Categoria" />
           </a>
           <p>BERMUDAS $ 60.00</p>
-          <a href="paginas/sueter.html" class="boton-agregar">VER MÁS</a>
+          <a href="paginas/productos.html" class="boton-agregar">VER MÁS</a>
         </div>
         <div class="cajaimagen">
           <a href="paginas/productos.html">
@@ -153,7 +208,7 @@
             />
           </a>
           <p>GORRAS $ 35.000</p>
-          <a href="paginas/sueter.html" class="boton-agregar">VER MÁS</a>
+          <a href="paginas/productos.html" class="boton-agregar">VER MÁS</a>
         </div>
       </div>
     </section>
@@ -168,7 +223,7 @@
           sea para una ocasión casual o formal, este suéter es tu elección
           ideal.
         </p>
-        <a class="vermas" href="paginas/sueter.html">VER MÁS</a>
+        <a class="vermas" href="paginas/productos.html">VER MÁS</a>
       </article>
       <article class="imagen-calidad">
         <div class="imagen">
@@ -298,6 +353,12 @@
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
       crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/js/all.min.js"
+      integrity="sha512-uKQ39gEGiyUJl4AI6L+ekBdGKpGw4xJ55+xyJG7YFlJokPNYegn9KwQ3P8A7aFQAUtUsAQHep+d/lrGqrbPIDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
     ></script>
   </body>
 </html>

@@ -9,7 +9,23 @@ cambiaColor.addEventListener("change", (event) => {
   } else {
     label_toggle.style.color = "Black";
   }
+
+  //guardamos el modo oscuro en localstorage
+
+  if (document.body.classList.contains("oscuro")) {
+    localStorage.setItem("modoOscuro", "true");
+  } else {
+    localStorage.setItem("modoOscuro", "false");
+  }
 });
+
+//Obtenemos el modo actual.
+
+if (localStorage.getItem("modoOscuro") === "true") {
+  document.body.classList.add("oscuro");
+} else {
+  document.body.classList.remove("oscuro");
+}
 
 /*Añadir al carritom un producto
 
@@ -36,33 +52,30 @@ console.log(productos);
 
 */
 
-/*Nuevo*/
+/*CARRITO DE COMPRA*/
 
-const btnCart = document.querySelector(".container-cart-icon");
-const containerCartProducts = document.querySelector(
+const botonCarrito = document.querySelector(".container-icon-cart");
+
+const contenedorProductoCarrito = document.querySelector(
   ".container-cart-products"
 );
 
-btnCart.addEventListener("click", () => {
-  containerCartProducts.classList.toggle("hidden-cart");
+botonCarrito.addEventListener("click", () => {
+  contenedorProductoCarrito.classList.toggle("hidden-cart");
 });
 
-/* ========================= */
+/*añadir producto al carrito*/
 const cartInfo = document.querySelector(".cart-product");
-const rowProduct = document.querySelector(".row-product");
+const rowProduct = document.querySelector(".carrito-producto");
 
 // Lista de todos los contenedores de productos
 const productsList = document.querySelector(".container-items");
 
-// Variable de arreglos de Productos
 let allProducts = [];
 
-const valorTotal = document.querySelector(".total-pagar");
+let valorTotal = document.querySelector(".total-pagar");
 
 const countProducts = document.querySelector("#contador-productos");
-
-const cartEmpty = document.querySelector(".cart-empty");
-const cartTotal = document.querySelector(".cart-total");
 
 productsList.addEventListener("click", (e) => {
   if (e.target.classList.contains("btn-add-cart")) {
@@ -104,61 +117,59 @@ rowProduct.addEventListener("click", (e) => {
     allProducts = allProducts.filter((product) => product.title !== title);
 
     console.log(allProducts);
-
     showHTML();
   }
 });
 
-// Funcion para mostrar  HTML
+// funcion para mostrar HTML
+
 const showHTML = () => {
   if (!allProducts.length) {
-    cartEmpty.classList.remove("hidden");
-    rowProduct.classList.add("hidden");
-    cartTotal.classList.add("hidden");
-  } else {
-    cartEmpty.classList.add("hidden");
-    rowProduct.classList.remove("hidden");
-    cartTotal.classList.remove("hidden");
+    contenedorProductoCarrito.innerHTML = `
+    <p class="carrito-vacio">El carrito esta vacio</p>
+    `;
   }
 
-  // Limpiar HTML
-  rowProduct.innerHTML = "";
+  //limpiar HTML
+  rowProduct.innerHTML = ``;
 
   let total = 0;
-  let totalOfProducts = 0;
+  let totalofProducts = 0;
 
   allProducts.forEach((product) => {
     const containerProduct = document.createElement("div");
     containerProduct.classList.add("cart-product");
 
     containerProduct.innerHTML = `
-            <div class="info-cart-product">
-                <span class="cantidad-producto-carrito">${product.quantity}</span>
-                <p class="titulo-producto-carrito">${product.title}</p>
-                <span class="precio-producto-carrito">${product.price}</span>
-            </div>
-            <svg
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke-width="1.5"
-                stroke="currentColor"
-                class="icon-close"
-            >
-                <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    d="M6 18L18 6M6 6l12 12"
-                />
-            </svg>
-        `;
+
+              <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">${product.quantity}</span>
+                        <p class="titulo-producto-carrito">${product.title}</p>
+                        <span class="precio-producto-carrito">${product.price}</span>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+    
+    `;
 
     rowProduct.append(containerProduct);
 
     total = total + parseInt(product.quantity * product.price.slice(1));
-    totalOfProducts = totalOfProducts + product.quantity;
+    totalofProducts = totalofProducts + product.quantity;
   });
 
-  valorTotal.innerText = `$${total}`;
-  countProducts.innerText = totalOfProducts;
+  valorTotal.innerText = `${total}`;
+  countProducts.innerText = totalofProducts;
 };

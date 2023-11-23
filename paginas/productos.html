@@ -58,10 +58,63 @@
               <a class="nav-link" href="productos.html">PRODUCTOS</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="carrito.html">CARRITO</a>
-            </li>
-            <li class="nav-item">
               <a class="nav-link" href="contacto.html">CONTACTO</a>
+            </li>
+
+            <li class="nav-item">
+              <div class="container-icon">
+                <div class="container-icon-cart">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke-width="1.5"
+                    stroke="currentColor"
+                    class="icon-cart"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z"
+                    />
+                  </svg>
+
+                  <div class="count-products">
+                    <span id="contador-productos">0</span>
+                  </div>
+                </div>
+
+                <div class="container-cart-products hidden-cart">
+                  <div class="carrito-producto">
+                    <div class="cart-product">
+                      <div class="info-cart-product">
+                        <span class="cantidad-producto-carrito">1</span>
+                        <p class="titulo-producto-carrito">Sueter Balenciaga</p>
+                        <span class="precio-producto-carrito">$45.000</span>
+                      </div>
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke-width="1.5"
+                        stroke="currentColor"
+                        class="icon-close"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          d="M6 18L18 6M6 6l12 12"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="cart-total">
+                    <h3>Total:</h3>
+                    <span class="total-pagar">$500</span>
+                  </div>
+                </div>
+              </div>
             </li>
           </ul>
           <label for="toggle" id="label-toggle"
@@ -76,45 +129,11 @@
       <img src="../img/bannersueter.png" alt="banner sueter" />
     </div>
 
-    <div class="container-icon caja">
-      <div class="container-cart-icon">
-        <div class="count-products">
-          <span id="contador-productos"></span>
-        </div>
-      </div>
-      <div class="container-cart-products hidden-cart">
-        <div class="row-product hidden">
-          <div class="cart-product">
-            <div class="info-cart-product">
-              <span class="cantidad-producto-carrito">1</span>
-              <p class="titulo-producto-carrito">Zapatos Nike</p>
-              <span class="precio-producto-carrito">$80</span>
-            </div>
-          </div>
-        </div>
-
-        <div class="cart-total hidden">
-          <h3>Total:</h3>
-          <span class="total-pagar">$200</span>
-        </div>
-        <p class="cart-empty">El carrito está vacío</p>
-      </div>
-    </div>
-
     <!--Productos-->
 
     <h1><b>Porductos</b></h1>
-    <div class="container-items">
-      <div class="caja-lateral">
-        <h6>FILTROS</h6>
-        <ul>
-          <li><a href="#">TALLA</a></li>
-          <li><a href="#">COLOR</a></li>
-          <li><a href="#">PRECIO</a></li>
-          <li><a href="#">MARCA</a></li>
-        </ul>
-      </div>
 
+    <div class="container-items">
       <div class="item">
         <figure>
           <img src="../img/sueter/sueter4.jpg" alt="producto" />
@@ -161,10 +180,11 @@
       Combina <b>estilo</b> y <b>comodidad</b> con nuestro conjunto de suéter y
       bermuda
     </h2>
+
     <div class="container-items">
       <div class="item">
         <figure>
-          <img src="../img/accesorios/gorra6.jpg" alt="producto" />
+          <img src="../img/accesorios/gorra2.jpg" alt="producto" />
         </figure>
         <div class="info-product">
           <h2>CAMISETAS</h2>
@@ -184,7 +204,7 @@
       </div>
       <div class="item">
         <figure>
-          <img src="../img/pantaloneta/ber2.jpg" alt="producto" />
+          <img src="../img/pantaloneta/ber5.jpg" alt="producto" />
         </figure>
         <div class="info-product">
           <h2>BERMUDAS</h2>
