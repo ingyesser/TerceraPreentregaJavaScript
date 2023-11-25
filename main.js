@@ -1,3 +1,4 @@
+//Modo Oscuro ------
 const cambiaColor = document.getElementById("toggle");
 const label_toggle = document.getElementById("label-toggle");
 cambiaColor.addEventListener("change", (event) => {
@@ -27,32 +28,7 @@ if (localStorage.getItem("modoOscuro") === "true") {
   document.body.classList.remove("oscuro");
 }
 
-/*Añadir al carritom un producto
-
-const productos = [];
-
-const productoElegido = {
-  nombre: "camiseta",
-  precio: "1500",
-  categoria: "Deportes",
-  marca: "NIKE",
-};
-
-const aniadirAlcarrito = document.querySelector("#agregar");
-
-aniadirAlcarrito.onclick = () => {
-  productos.push(productoElegido);
-  console.log(productos);
-  document.querySelector(
-    ".confirmar-carrito"
-  ).innerHTML = `<h2>Agregastes a tu carrito ${productoElegido.nombre}</h2>`;
-};
-
-console.log(productos);
-
-*/
-
-/*CARRITO DE COMPRA*/
+//Carrito de Compra---------
 
 const botonCarrito = document.querySelector(".container-icon-cart");
 
@@ -173,3 +149,17 @@ const showHTML = () => {
   valorTotal.innerText = `${total}`;
   countProducts.innerText = totalofProducts;
 };
+
+// Uso de sweet alert 2 para el carrito
+const botonComprar = document.getElementById("comprar");
+
+botonComprar.addEventListener("click", (e) => {
+  Swal.fire({
+    title: "Su compra se ha realizado",
+    icon: "success",
+  });
+
+  allProducts = [];
+
+  showHTML();
+});

@@ -1,5 +1,5 @@
 @charset "UTF-8";
-/*comentario sass y css*/
+
 .navegacion-inicio {
   background-color: #ffffff;
 }
@@ -135,6 +135,7 @@ body {
 .icon-close {
   width: 25px;
   height: 25px;
+  color: #000;
 }
 
 .icon-close:hover {
@@ -254,10 +255,17 @@ h2 {
 .info-product button {
   border: none;
   background: none;
-  background-color: #000;
-  color: #fff;
+  background-color: #fff;
+  color: #000;
+  border: 2px solid #000;
   padding: 15px 10px;
   cursor: pointer;
+}
+
+.info-product button:hover {
+  background-color: #000;
+  color: #fff;
+  border: 2px solid #fff;
 }
 
 .cart-empty {
@@ -267,6 +275,40 @@ h2 {
 
 .hidden {
   display: none;
+}
+
+.cantidad-producto-carrito,
+.precio-producto-carrito,
+.titulo-producto-carrito,
+.total-pagar {
+  color: #000;
+}
+
+.cart-total h3 {
+  color: #000;
+}
+
+.carrito-vacio {
+  color: #000;
+}
+
+.botonComprar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40%;
+  height: 35px;
+  margin-left: 30%;
+  background-color: #3483fa;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  margin-bottom: 15px;
+}
+
+.botonComprar:hover {
+  background-color: rgb(8, 57, 129);
 }
 
 /*Estilo categorias*/
